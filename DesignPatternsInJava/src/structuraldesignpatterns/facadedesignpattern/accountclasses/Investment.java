@@ -1,13 +1,13 @@
-package facadedesignpattern.accountclasses;
+package structuraldesignpatterns.facadedesignpattern.accountclasses;
 
-import facadedesignpattern.accountinterfaces.IAccount;
+import structuraldesignpatterns.facadedesignpattern.accountinterfaces.IAccount;
 
 import java.math.BigDecimal;
 
-public class Chequing implements IAccount {
-    private BigDecimal initAmount;
+public class Investment implements IAccount {
+    BigDecimal initAmount;
 
-    public Chequing(BigDecimal initAmount){
+    public Investment(BigDecimal initAmount) {
         this.initAmount = initAmount;
     }
 

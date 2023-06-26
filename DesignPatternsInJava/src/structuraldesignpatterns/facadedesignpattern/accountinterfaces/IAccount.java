@@ -1,4 +1,4 @@
-package facadedesignpattern.accountinterfaces;
+package structuraldesignpatterns.facadedesignpattern.accountinterfaces;
 
 import java.math.BigDecimal;
 

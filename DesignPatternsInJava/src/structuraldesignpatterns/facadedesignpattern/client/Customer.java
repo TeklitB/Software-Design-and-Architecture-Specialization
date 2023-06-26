@@ -1,6 +1,6 @@
-package facadedesignpattern.client;
+package structuraldesignpatterns.facadedesignpattern.client;
 
-import facadedesignpattern.facade.BankService;
+import structuraldesignpatterns.facadedesignpattern.facade.BankService;
 
 import java.math.BigDecimal;
 

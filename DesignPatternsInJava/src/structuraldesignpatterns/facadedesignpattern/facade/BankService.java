@@ -1,9 +1,9 @@
-package facadedesignpattern.facade;
+package structuraldesignpatterns.facadedesignpattern.facade;
 
-import facadedesignpattern.accountclasses.Chequing;
-import facadedesignpattern.accountclasses.Investment;
-import facadedesignpattern.accountclasses.Saving;
-import facadedesignpattern.accountinterfaces.IAccount;
+import structuraldesignpatterns.facadedesignpattern.accountclasses.Chequing;
+import structuraldesignpatterns.facadedesignpattern.accountclasses.Investment;
+import structuraldesignpatterns.facadedesignpattern.accountclasses.Saving;
+import structuraldesignpatterns.facadedesignpattern.accountinterfaces.IAccount;
 
 import java.math.BigDecimal;
 import java.util.Hashtable;

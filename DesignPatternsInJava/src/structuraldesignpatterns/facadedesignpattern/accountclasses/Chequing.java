@@ -1,15 +1,16 @@
-package facadedesignpattern.accountclasses;
+package structuraldesignpatterns.facadedesignpattern.accountclasses;
 
-import facadedesignpattern.accountinterfaces.IAccount;
+import structuraldesignpatterns.facadedesignpattern.accountinterfaces.IAccount;
 
 import java.math.BigDecimal;
 
-public class Saving implements IAccount {
-    BigDecimal initAmount;
+public class Chequing implements IAccount {
+    private BigDecimal initAmount;
 
-    public Saving(BigDecimal initAmount){
+    public Chequing(BigDecimal initAmount){
         this.initAmount = initAmount;
     }
+
     @Override
     public void deposit(BigDecimal amount) {
 
