@@ -1,9 +1,8 @@
-package structuraldesignpatterns.compositepattern.client;
+package structuraldesignpatterns.compositepattern.assignment1;
 
 import java.util.ArrayList;
 
-public class Playlist implements IComponent {
-
+public class Playlist implements  IComponent {
     public String playlistName;
     public ArrayList<IComponent> playlist = new ArrayList<>();
 
@@ -13,24 +12,28 @@ public class Playlist implements IComponent {
 
     @Override
     public void play() {
-
+        for (IComponent comp : playlist){
+            comp.play();
+        }
     }
 
     @Override
     public void setPlaybackSpeed(float speed) {
-
+        for(IComponent comp : playlist){
+            comp.setPlaybackSpeed(speed);
+        }
     }
 
     @Override
     public String getName() {
-        return null;
+        return playlistName;
     }
 
     public void add(IComponent component) {
-
+        playlist.add(component);
     }
 
     public void remove(IComponent component) {
-
+        playlist.remove(component);
     }
 }

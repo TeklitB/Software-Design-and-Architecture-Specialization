@@ -1,4 +1,4 @@
-package structuraldesignpatterns.compositepattern.client;
+package structuraldesignpatterns.compositepattern.assignment1;
 
 public class Song implements IComponent {
     public String songName;
@@ -12,20 +12,20 @@ public class Song implements IComponent {
 
     @Override
     public void play() {
-
+        System.out.println("Play song: " + songName + "Artist: " + artist + " with speed: " + speed );
     }
 
     @Override
     public void setPlaybackSpeed(float speed) {
-
+        this.speed = speed;
     }
 
     @Override
     public String getName() {
-        return null;
+        return songName;
     }
 
-    public String getArtist() {
-        return this.songName + " by " + this.artist;
+    public String getArtist(){
+        return artist;
     }
 }

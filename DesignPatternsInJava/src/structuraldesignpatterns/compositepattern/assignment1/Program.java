@@ -1,7 +1,8 @@
-package structuraldesignpatterns.compositepattern.client;
+package structuraldesignpatterns.compositepattern.assignment1;
 
 public class Program {
-    public static void main(String args[]) {
+
+    public static void main(String[] args) {
 
         // Make new empty "Study" playlist
         Playlist studyPlaylist = new Playlist("Study");
